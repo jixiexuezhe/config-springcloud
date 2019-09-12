@@ -1,0 +1,22 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: Jkdz8888
+    url: jdbc:mysql://172.16.1.101:3306/spring?autoReconnect=true&useUnicode=true&characterEncoding=utf8
+    username: root
+  kafka:
+    bootstrap-servers: localhost:9092
+  redis:
+    database: 0
+    host: 39.97.109.166
+    password: redis123456
+    port: 6379
+    timeout: 3000
+    jedis:
+        pool:
+          max-idle: 10
+          min-idle: 0
+          max-active: 20
+          max-wait: 100000
